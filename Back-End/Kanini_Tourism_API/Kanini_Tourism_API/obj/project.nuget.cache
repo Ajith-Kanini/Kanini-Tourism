@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "2Cv4fOQQb+GUrGCxjxRMVAU8NjQHeg19gVxd8wD9+H5AXgmK8v6Z/+H/QzYPQR6Aq4n9LCCCYmdaJLZHNtjnmw==",
+  "success": true,
+  "projectFilePath": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Kanini_Tourism_API\\Kanini_Tourism_API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hariprakash R\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Hariprakash R\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Hariprakash R\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Hariprakash R\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Hariprakash R\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Hariprakash R\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
