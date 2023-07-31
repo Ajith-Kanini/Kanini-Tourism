@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Tourist_Places_API.props" />
+</Project>

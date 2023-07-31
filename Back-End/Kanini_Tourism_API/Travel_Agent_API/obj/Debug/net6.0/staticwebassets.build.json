@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "z9/JC8WNhNyVNjSns509A6eyy/cn5Igom8yTuHCRf0o=",
+  "Source": "Travel_Agent_API",
+  "BasePath": "_content/Travel_Agent_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Travel_Agent_API\\wwwroot",
+      "Source": "Travel_Agent_API",
+      "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\",
+      "BasePath": "_content/Travel_Agent_API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
+      "SourceId": "Travel_Agent_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\",
+      "BasePath": "_content/Travel_Agent_API",
+      "RelativePath": "uploads/5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
+    }
+  ]
+}

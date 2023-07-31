@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "43kqGso37X/Wa7S0h63yUJBlYFheTaiqx5bPMINGcl4=",
+  "Source": "Hotels_API",
+  "BasePath": "_content/Hotels_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Hotels_API\\wwwroot",
+      "Source": "Hotels_API",
+      "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\",
+      "BasePath": "_content/Hotels_API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
+      "SourceId": "Hotels_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\",
+      "BasePath": "_content/Hotels_API",
+      "RelativePath": "uploads/5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
+    }
+  ]
+}

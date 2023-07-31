@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FXuo0rJ/DKgZckZbA/atjwadmgDcJQFSZ6LAhQS7Ms9BSydSosCas/eUOll8p1sn6eiGm9v33PryuLUiUAKQ5A==",
+  "dgSpecHash": "DfNBNzynhKyMcct+rvREM5FCpVMAdhMEYRjsRCrHMH+j6xyDNxa2ozkSVROScDEV8LrPZb1S8U40+Wykvtk9jQ==",
   "success": true,
   "projectFilePath": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\Travel_Agent_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hariprakash R\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Hariprakash R\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Hariprakash R\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Hariprakash R\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.20\\microsoft.aspnetcore.authentication.jwtbearer.6.0.20.nupkg.sha512",
     "C:\\Users\\Hariprakash R\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Hariprakash R\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Hariprakash R\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",

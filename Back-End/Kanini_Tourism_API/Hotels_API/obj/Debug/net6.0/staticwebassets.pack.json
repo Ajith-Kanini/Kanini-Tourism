@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
+      "PackagePath": "staticwebassets\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Hotels_API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Hotels_API.props",
+      "PackagePath": "build\\Hotels_API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Hotels_API.props",
+      "PackagePath": "buildMultiTargeting\\Hotels_API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Hotels_API.props",
+      "PackagePath": "buildTransitive\\Hotels_API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

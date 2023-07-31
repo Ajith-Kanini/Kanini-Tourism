@@ -9,15 +9,15 @@ namespace Tourist_Places_API.Models
 
         [Required(ErrorMessage = "Package Name is required.")]
         [MaxLength(100, ErrorMessage = "Package Name cannot exceed 100 characters.")]
-        public string PackageName { get; set; }
+        public string? PackageName { get; set; }
 
         [Required(ErrorMessage = "Description is required.")]
         [MaxLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required(ErrorMessage = "Destination is required.")]
         [MaxLength(100, ErrorMessage = "Destination cannot exceed 100 characters.")]
-        public string Destination { get; set; }
+        public string? Destination { get; set; }
 
         [Required(ErrorMessage = "Price is required.")]
         [DataType(DataType.Currency)]
@@ -25,7 +25,7 @@ namespace Tourist_Places_API.Models
 
         [Required(ErrorMessage = "Duration is required.")]
         [MaxLength(50, ErrorMessage = "Duration cannot exceed 50 characters.")]
-        public string Duration { get; set; }
+        public string? Duration { get; set; }
 
         [Required(ErrorMessage = "Start Date is required.")]
         [DataType(DataType.Date)]
