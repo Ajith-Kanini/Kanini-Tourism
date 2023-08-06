@@ -1,27 +1,27 @@
 {
   "Version": 1,
-  "Hash": "Zb34eq0280qiJmllqzCp7sbfrAqaIqRFY6Bmf7AceOQ=",
-  "Source": "User_API",
-  "BasePath": "_content/User_API",
+  "Hash": "tBWIVNgNgrkGCIRbhIsfgIWm0RF3rfyW2UDHiG7ZhaI=",
+  "Source": "UserManagementAPI",
+  "BasePath": "_content/UserManagementAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "User_API\\wwwroot",
-      "Source": "User_API",
+      "Name": "UserManagementAPI\\wwwroot",
+      "Source": "UserManagementAPI",
       "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\User_API\\wwwroot\\",
-      "BasePath": "_content/User_API",
+      "BasePath": "_content/UserManagementAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
       "Identity": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\User_API\\wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
-      "SourceId": "User_API",
+      "SourceId": "UserManagementAPI",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\User_API\\wwwroot\\",
-      "BasePath": "_content/User_API",
+      "BasePath": "_content/UserManagementAPI",
       "RelativePath": "uploads/5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
+    },
+    {
+      "Identity": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\User_API\\wwwroot\\uploads\\user\\c1202377-cb2c-4467-a63c-e29c1ab2231e.jpg",
+      "SourceId": "UserManagementAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\User_API\\wwwroot\\",
+      "BasePath": "_content/UserManagementAPI",
+      "RelativePath": "uploads/user/c1202377-cb2c-4467-a63c-e29c1ab2231e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\user\\c1202377-cb2c-4467-a63c-e29c1ab2231e.jpg"
     }
   ]
 }

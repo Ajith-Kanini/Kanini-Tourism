@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel_Agent_API", "Travel_Agent_API\Travel_Agent_API.csproj", "{29C43196-16A6-4FE8-A597-0630C2A48900}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelAgencyManagementAPI", "Travel_Agent_API\TravelAgencyManagementAPI.csproj", "{29C43196-16A6-4FE8-A597-0630C2A48900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tourist_Places_API", "Tourist_Places_API\Tourist_Places_API.csproj", "{D9C7DF6A-1AA6-4D02-9B68-DE012FBD506F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TourManagementAPI", "Tourist_Places_API\TourManagementAPI.csproj", "{D9C7DF6A-1AA6-4D02-9B68-DE012FBD506F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_API", "User_API\User_API.csproj", "{FB9AAAFB-93F3-4361-913B-EAAED65CD570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserManagementAPI", "User_API\UserManagementAPI.csproj", "{FB9AAAFB-93F3-4361-913B-EAAED65CD570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotels_API", "Hotels_API\Hotels_API.csproj", "{F1E833D3-8616-4174-9246-99774EC35C9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelManagementAPI", "Hotels_API\HotelManagementAPI.csproj", "{F1E833D3-8616-4174-9246-99774EC35C9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

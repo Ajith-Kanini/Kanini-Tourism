@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    border-radius: 12px;
+    position: relative;
+    margin: 100px 30px;
+}
+.card_image img{
+    border-radius: 12px;
+}
+.card1-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    border-radius: 12px;
+    background-color: #1b1f2290;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.card1:hover .card1-content{
+    opacity: 1;
+}
+.card1-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card1-icons a{
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+.card1-icons i{
+    padding: 18px;
+    zoom: 120%;
+    background-color: white;
+    clip-path: circle(40%);
+}
+.card1-icons a:hover{
+    transform: scale(1.1);
+}
+.card1-details{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #1b1f2298;
+    border-radius: 12px;
+}
+.card1-details p{
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+.card1:hover .card1-details{
+    animation: move 0.5s 1;
+}
+.card2{
+    overflow: hidden;
+}
+.card2 .card_image{
+    transition: all 0.9s ease-in-out;
+}
+.card2:hover .card2_content{
+    transform: translateY(-400px);
+}
+.card2:hover .card_image{
+    transform: translateY(-80px);
+}
+.card2_content{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 12px;
+    clip-path: polygon(0 50%, 100% 25%, 100% 100%, 0% 100%);
+    text-align: center;
+    padding-top: 190px;
+    font-size: 14px;
+    color: #1b1f2290;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+}
+.card2_content p , .card3-content p{
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+.card2_icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+.card2_icons i{
+    color: #1b1f22;
+    opacity: 80%;
+    transform: scale(1.8);
+}
+.card2_icons i:hover{
+    opacity: 1;
+}
+.card3{
+    background-color: white;
+}
+.card3 .card_image img{
+    clip-path: circle(29.4% at 50% 50%);
+    transition: all 0.4s ease-in-out;
+}
+.card3:hover .card_image img{
+    transform: translateY(-150px);
+}
+.card3-content{
+    position: absolute;
+    top: 180px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    color: #1b1f2290;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.card3:hover .card3-content{
+    opacity: 1;
+}
+.card3-content span{
+    color: black;
+}
+.card3-content .card2_icons i{
+    opacity: 1;
+    padding: 10px;
+    clip-path: circle(40%);
+    transition: all 0.2s ease-in;
+}
+.card3-content .card2_icons i:hover{
+    color: white;
+    background-color: black;
+}
+.card-btn a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+.card-btn:hover{
+    opacity: 0.9;
+}
+.card3{
+	background-color: white;
+}
+@keyframes move {
+    from{
+        bottom: -50px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+
+@keyframes card3View {
+    to{
+        opacity: 1;
+    }
+}

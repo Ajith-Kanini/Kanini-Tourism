@@ -3,7 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using Travel_Agent_API.DB;
+using TravelAgencyManagementAPI.DB;
+using TravelAgencyManagementAPI.Repositories;
+using TravelAgencyManagementAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +45,15 @@ builder.Services.AddSwaggerGen(c =>
 
 // Db Connection
 builder.Services.AddDbContext<AgencyContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("OneToManyConnection")));
+
+//Dependency Injection
+builder.Services.AddScoped<ITourOfferRepository, TourOfferRepository>();
+builder.Services.AddScoped<ITravelAgentRepository, TravelAgentRepository>();
+builder.Services.AddScoped<IPackageRepository, PackageRepository>();
+builder.Services.AddScoped<IImageGalleryRepository, ImageGalleryRepository>();
+
+//Cyclic
+builder.Services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 // Adding Authentication
 builder.Services.AddAuthentication(options =>

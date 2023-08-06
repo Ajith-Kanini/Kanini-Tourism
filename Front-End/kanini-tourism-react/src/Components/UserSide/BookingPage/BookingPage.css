@@ -1,0 +1,97 @@
+/* BookingForm.css */
+.bookingFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bookingFormWrapper {
+    max-width: 605px;
+    height: 100vh;
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .formHeadline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .createHead {
+    font-size: 24px;
+    margin: 0;
+    color: #143b6f;
+  }
+  
+  .closeImg {
+    cursor: pointer;
+  } 
+  .formControl {
+    margin-bottom: 15px;
+  }
+  
+  .formLabel {
+    display: block;
+    margin-bottom: 5px;
+    color: #143b6f;
+  }
+  .formDateInput{
+    width: 270px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .formInput {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .splitInput{
+    display: flex;
+    justify-content: space-between;
+  }
+  .formSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="%23143b6f" viewBox="0 0 24 24"><path d="M8.3 13.9c-.4.4-1 .4-1.4 0l-4.6-4.6c-.3-.3-.3-.8 0-1.1.4-.4 1-.4 1.4 0L8 11.5l7.9-7.9c.4-.4 1-.4 1.4 0 .3.3.3.8 0 1.1L8.3 13.9z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  .formInput[type='number'] {
+    width: 270px;
+  }
+  
+  .formButton {
+    background-color: #143b6f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formButton:hover {
+    background-color: #0f2e51;
+  }
+  
+  .formError {
+    color: #ff0000;
+    font-size: 14px;
+  }

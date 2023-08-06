@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.DotNet.Scaffolding.Shared.ProjectModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using Tourist_Places_API.DB;
+using TourManagementAPI.DB;
+using TourManagementAPI.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +45,11 @@ builder.Services.AddSwaggerGen(c =>
 
 // Db Connection
 builder.Services.AddDbContext<TouristPlaceContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("OneToManyConnection")));
+
+builder.Services.AddHttpClient();
+
+// Dependency Injection
+builder.Services.AddScoped<ITouristAttractionRepository, TouristAttractionRepository>();
 
 // Adding Authentication
 builder.Services.AddAuthentication(options =>

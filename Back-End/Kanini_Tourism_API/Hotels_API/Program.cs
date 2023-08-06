@@ -1,4 +1,6 @@
-using Hotels_API.DB;
+using HotelManagementAPI.DB;
+using HotelManagementAPI.Repositories;
+using HotelManagementAPI.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -43,6 +45,12 @@ builder.Services.AddSwaggerGen(c =>
 
 // Db Connection
 builder.Services.AddDbContext<HotelContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("OneToManyConnection")));
+
+//Dependency Injection
+builder.Services.AddScoped<IHotelRepository, HotelRepository>();
+builder.Services.AddScoped<IRoomRepository, RoomRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+
 
 // Adding Authentication
 builder.Services.AddAuthentication(options =>

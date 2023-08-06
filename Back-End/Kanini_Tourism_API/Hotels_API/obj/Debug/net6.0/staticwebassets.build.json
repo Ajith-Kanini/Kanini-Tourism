@@ -1,28 +1,28 @@
 {
   "Version": 1,
-  "Hash": "43kqGso37X/Wa7S0h63yUJBlYFheTaiqx5bPMINGcl4=",
-  "Source": "Hotels_API",
-  "BasePath": "_content/Hotels_API",
+  "Hash": "wds9VKUQLgiJv/MfrEGLElaZeGiLxfMgVxHPF0QMHxc=",
+  "Source": "HotelManagementAPI",
+  "BasePath": "_content/HotelManagementAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Hotels_API\\wwwroot",
-      "Source": "Hotels_API",
+      "Name": "HotelManagementAPI\\wwwroot",
+      "Source": "HotelManagementAPI",
       "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\",
-      "BasePath": "_content/Hotels_API",
+      "BasePath": "_content/HotelManagementAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
-      "SourceId": "Hotels_API",
+      "Identity": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\hotels\\19d7544c-2761-47c9-96a6-d959ede3b614.avif",
+      "SourceId": "HotelManagementAPI",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\",
-      "BasePath": "_content/Hotels_API",
-      "RelativePath": "uploads/5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
+      "BasePath": "_content/HotelManagementAPI",
+      "RelativePath": "uploads/hotels/19d7544c-2761-47c9-96a6-d959ede3b614.avif",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,7 +31,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
+      "OriginalItemSpec": "wwwroot\\uploads\\hotels\\19d7544c-2761-47c9-96a6-d959ede3b614.avif"
+    },
+    {
+      "Identity": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\hotels\\ffaafc2d-cf10-467e-9bc9-d8b51d9324d6.avif",
+      "SourceId": "HotelManagementAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\",
+      "BasePath": "_content/HotelManagementAPI",
+      "RelativePath": "uploads/hotels/ffaafc2d-cf10-467e-9bc9-d8b51d9324d6.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\hotels\\ffaafc2d-cf10-467e-9bc9-d8b51d9324d6.avif"
     }
   ]
 }

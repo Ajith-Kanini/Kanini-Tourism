@@ -1,24 +1,28 @@
 {
   "Files": [
     {
-      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg",
-      "PackagePath": "staticwebassets\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\hotels\\19d7544c-2761-47c9-96a6-d959ede3b614.avif",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\19d7544c-2761-47c9-96a6-d959ede3b614.avif"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Hotels_API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Hotels_API\\wwwroot\\uploads\\hotels\\ffaafc2d-cf10-467e-9bc9-d8b51d9324d6.avif",
+      "PackagePath": "staticwebassets\\uploads\\hotels\\ffaafc2d-cf10-467e-9bc9-d8b51d9324d6.avif"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HotelManagementAPI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Hotels_API.props",
-      "PackagePath": "build\\Hotels_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HotelManagementAPI.props",
+      "PackagePath": "build\\HotelManagementAPI.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Hotels_API.props",
-      "PackagePath": "buildMultiTargeting\\Hotels_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HotelManagementAPI.props",
+      "PackagePath": "buildMultiTargeting\\HotelManagementAPI.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Hotels_API.props",
-      "PackagePath": "buildTransitive\\Hotels_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HotelManagementAPI.props",
+      "PackagePath": "buildTransitive\\HotelManagementAPI.props"
     }
   ],
   "ElementsToRemove": []

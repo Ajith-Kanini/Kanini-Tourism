@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using User_API.DB;
+using UserManagementAPI.DB;
+using UserManagementAPI.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +45,7 @@ builder.Services.AddSwaggerGen(c =>
 // Db Connection
 builder.Services.AddDbContext<UserContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("OneToManyConnection")));
 
+builder.Services.AddScoped<IUserRepository,UserRepository>();
 // Adding Authentication
 builder.Services.AddAuthentication(options =>
 {

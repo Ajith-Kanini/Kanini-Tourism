@@ -5,20 +5,84 @@
       "PackagePath": "staticwebassets\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Travel_Agent_API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\019aeb05-7884-439a-bfe9-d098b37c530c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\019aeb05-7884-439a-bfe9-d098b37c530c.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\05240ac5-5a8b-43f9-97d1-1ebd2910f4d6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\05240ac5-5a8b-43f9-97d1-1ebd2910f4d6.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\07a483c7-3f5e-48ce-91ef-4751a82ca58c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\07a483c7-3f5e-48ce-91ef-4751a82ca58c.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\20dd4b5a-f519-45b3-8471-355fb73cde7f.avif",
+      "PackagePath": "staticwebassets\\uploads\\agent\\20dd4b5a-f519-45b3-8471-355fb73cde7f.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\24e10dbf-8156-4b72-aad7-1caf74178106.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\24e10dbf-8156-4b72-aad7-1caf74178106.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\2b8ee0b7-6408-4370-8845-a7ce5603b213.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\2b8ee0b7-6408-4370-8845-a7ce5603b213.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\44924e30-5160-4d0a-b3ea-fbf002391c29.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\44924e30-5160-4d0a-b3ea-fbf002391c29.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\44bc0097-3b65-4e61-a5f6-e68c1e266edb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\44bc0097-3b65-4e61-a5f6-e68c1e266edb.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\8b0ddf6c-e0df-40e9-8b04-35166322fbc7.avif",
+      "PackagePath": "staticwebassets\\uploads\\agent\\8b0ddf6c-e0df-40e9-8b04-35166322fbc7.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\c841db09-0e26-46ef-adb8-b2f46c75709b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\c841db09-0e26-46ef-adb8-b2f46c75709b.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\ccd3c822-5da0-4beb-a6be-c68655af653f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\ccd3c822-5da0-4beb-a6be-c68655af653f.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\d09bd393-bafb-4c47-826c-be57532daad1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\d09bd393-bafb-4c47-826c-be57532daad1.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\ed29549c-7b5d-46fc-b797-71f46b99c3dc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\ed29549c-7b5d-46fc-b797-71f46b99c3dc.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\f2c8ea4a-d83c-4a9c-a772-55bbf1984c6b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\f2c8ea4a-d83c-4a9c-a772-55bbf1984c6b.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\6a6739ce-377e-4fbb-8506-f860a3d59b52.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\6a6739ce-377e-4fbb-8506-f860a3d59b52.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\edd0c819-aef3-41c2-b522-258b2c7e04d2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\edd0c819-aef3-41c2-b522-258b2c7e04d2.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TravelAgencyManagementAPI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Travel_Agent_API.props",
-      "PackagePath": "build\\Travel_Agent_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TravelAgencyManagementAPI.props",
+      "PackagePath": "build\\TravelAgencyManagementAPI.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Travel_Agent_API.props",
-      "PackagePath": "buildMultiTargeting\\Travel_Agent_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TravelAgencyManagementAPI.props",
+      "PackagePath": "buildMultiTargeting\\TravelAgencyManagementAPI.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Travel_Agent_API.props",
-      "PackagePath": "buildTransitive\\Travel_Agent_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TravelAgencyManagementAPI.props",
+      "PackagePath": "buildTransitive\\TravelAgencyManagementAPI.props"
     }
   ],
   "ElementsToRemove": []

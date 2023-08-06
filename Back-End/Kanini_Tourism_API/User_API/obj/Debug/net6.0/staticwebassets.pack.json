@@ -5,20 +5,24 @@
       "PackagePath": "staticwebassets\\uploads\\5f5825f4-da80-459e-a3d1-a4cd0ebd373b.svg"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.User_API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\User_API\\wwwroot\\uploads\\user\\c1202377-cb2c-4467-a63c-e29c1ab2231e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\user\\c1202377-cb2c-4467-a63c-e29c1ab2231e.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.UserManagementAPI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.User_API.props",
-      "PackagePath": "build\\User_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.UserManagementAPI.props",
+      "PackagePath": "build\\UserManagementAPI.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.User_API.props",
-      "PackagePath": "buildMultiTargeting\\User_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.UserManagementAPI.props",
+      "PackagePath": "buildMultiTargeting\\UserManagementAPI.props"
     },
     {
-      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.User_API.props",
-      "PackagePath": "buildTransitive\\User_API.props"
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.UserManagementAPI.props",
+      "PackagePath": "buildTransitive\\UserManagementAPI.props"
     }
   ],
   "ElementsToRemove": []
