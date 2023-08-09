@@ -32,7 +32,7 @@ namespace HotelManagementAPI.Repositories
             {
                 throw new ArgumentNullException(nameof(room));
             }
-
+           
             _context.Rooms.Add(room);
             await _context.SaveChangesAsync();
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Variable } from "../../../Variables";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const AdminAction = () => {
   const [agents, setAgents] = useState([]);
@@ -31,8 +32,13 @@ const AdminAction = () => {
       console.error('Error deleting agent:', error);
     }
   };
+  var navigate=useNavigate()
   useEffect(() => {
-    axios
+    if (localStorage.getItem('Role') === 'Admin') {
+      axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem(
+        'AdminToken'
+      )}`;
+      axios
       .get(Variable.AgentURL.GetAll)
       .then((response) => {
         setAgents(response.data.filter(x=>x.agentStatus===false));
@@ -40,7 +46,11 @@ const AdminAction = () => {
       .catch((error) => {
         console.error("Error fetching agent details:", error);
       });
-  }, []);
+    }
+    else {
+      navigate('/AdminSignin')
+    }
+  });
   return (
     <div>
       <div className="container-fluid">

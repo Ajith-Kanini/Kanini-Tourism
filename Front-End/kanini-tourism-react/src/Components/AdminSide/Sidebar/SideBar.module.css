@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Mulish;
-}
-
-
-
-nav {
+.nav_1 {
     position: sticky;
     top: 0;
     left: 0;
@@ -30,7 +21,7 @@ main {
   flex-direction: column;
 }
 
-body.collapsed nav {
+body.collapsed .nav_1 {
   width: 80px;
 }
 
@@ -107,7 +98,7 @@ body.collapsed .expand_btn svg {
   position: relative;
 }
 
-.sidebar_links li a {
+.sidebar_links li div {
   margin: 8px 0px;
   padding: 12px;
   color: #D8DCE0; /* Updated sidebar-gray-light color */
@@ -119,13 +110,13 @@ body.collapsed .expand_btn svg {
   transition: all 0.5s ease-in-out;
 }
 
-.sidebar_links li a i {
+.sidebar_links li div i {
   color: #D8DCE0; /* Updated sidebar-gray-light color */
   height: 32px;
   width: 32px;
 }
 
-.sidebar_links li a i:hover svg {
+.sidebar_links li div i:hover svg {
   stroke: #D8DCE0; /* Updated sidebar-gray-light color */
 }
 
@@ -134,9 +125,10 @@ body.collapsed .expand_btn svg {
   opacity: 1;
 }
 
-.sidebar_links li a:hover,
+.sidebar_links li div:hover,
 .sidebar_links .active {
   width: 100%;
+  cursor: pointer;
   text-decoration: none;
   background-color: #373E4A; /* Updated sidebar-gray-background color */
   transition: all 100ms ease-in;
@@ -232,7 +224,7 @@ body.collapsed .expand_btn svg {
     flex-direction: column;
     gap: 0rem;
 }
-.SidebarUL li a span{
+.SidebarUL li div span{
   padding: 12px;
   color: #D8DCE0; /* Updated sidebar-gray-light color */
   font-size:1rem;

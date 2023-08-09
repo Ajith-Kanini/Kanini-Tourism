@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TravelAgencyManagementAPI.Models;
@@ -19,7 +20,7 @@ namespace TravelAgencyManagementAPI.Controllers
         {
             _repository = repository;
         }
-
+        //[Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ImageGallery>>> GetImageGalleries()
         {
@@ -72,7 +73,7 @@ namespace TravelAgencyManagementAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred: {ex.Message}");
             }
         }
-
+        //[Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<ImageGallery>> PostImageGallery([FromForm] ImageGallery imageGallery, IFormFile imageFile)
         {

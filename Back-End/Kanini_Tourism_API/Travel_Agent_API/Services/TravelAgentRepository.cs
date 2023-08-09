@@ -52,19 +52,20 @@ namespace TravelAgencyManagementAPI.Repositories
 
             travelAgent.AgentImage = fileName;
 
-           
-           
+
+
 
             _context.TravelAgents.Add(new TravelAgent
             {
-                AgentName=travelAgent.AgentName,
-                AgentEmail=travelAgent.AgentEmail,
-                AgentPhoneNumber=travelAgent.AgentPhoneNumber,
-                AgentCity=travelAgent.AgentCity,
-                AgentPassword= travelAgent.AgentPassword !=null? Encrypt(travelAgent.AgentPassword) : travelAgent.AgentPassword,
-                AgentImage=fileName,
-            
-            });
+                AgentName = travelAgent.AgentName,
+                AgentEmail = travelAgent.AgentEmail,
+                AgentPhoneNumber = travelAgent.AgentPhoneNumber,
+                AgentCity = travelAgent.AgentCity,
+                AgentPassword = travelAgent.AgentPassword != null ? Encrypt(travelAgent.AgentPassword) : travelAgent.AgentPassword,
+                AgentImage = fileName,
+                AgentRegistrationDate = DateTime.Now.ToString(),
+
+            }) ;
 
             await _context.SaveChangesAsync(); // Use asynchronous SaveChangesAsync()
 
@@ -74,22 +75,52 @@ namespace TravelAgencyManagementAPI.Repositories
 
         public async Task<TravelAgent> UpdateTravelAgentAsync(int id, [FromForm] TravelAgent travelAgent, IFormFile imageFile)
         {
-            if (travelAgent == null)
+            var existinguser = await _context.TravelAgents.FindAsync(id);
+
+            if (existinguser == null)
             {
-                throw new ArgumentNullException(nameof(travelAgent));
+                throw new ArgumentException("travelAgent not found");
             }
 
-            var existingTravelAgent = await _context.TravelAgents.FindAsync(id);
-            if (existingTravelAgent == null)
+            if (imageFile != null && imageFile.Length > 0)
             {
-                return null;
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads/agent");
+
+                if (!string.IsNullOrEmpty(existinguser.AgentImage))
+                {
+                    var existingFilePath = Path.Combine(uploadsFolder, existinguser.AgentImage);
+                    if (File.Exists(existingFilePath))
+                    {
+                        File.Delete(existingFilePath);
+                    }
+                }
+
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                travelAgent.AgentImage = fileName;
+            }
+            else
+            {
+                travelAgent.AgentImage = existinguser.AgentImage;
             }
 
-            
-            _context.Entry(existingTravelAgent).State = EntityState.Modified;
+            existinguser.AgentName = travelAgent.AgentName;
+            existinguser.AgentPhoneNumber = travelAgent.AgentPhoneNumber;
+            existinguser.AgentAddress = travelAgent.AgentAddress;
+            existinguser.AgentCity = travelAgent.AgentCity;
+            existinguser.AgentEmail = travelAgent.AgentEmail;
+            existinguser.AgentPassword= travelAgent.AgentPassword;
+            existinguser.AgentImage = travelAgent.AgentImage;
+            existinguser.AgentStatus= travelAgent.AgentStatus;
             await _context.SaveChangesAsync();
 
-            return existingTravelAgent;
+            return existinguser;
         }
 
         public async Task DeleteTravelAgentAsync(TravelAgent travelAgent)
@@ -102,7 +133,24 @@ namespace TravelAgencyManagementAPI.Repositories
             _context.TravelAgents.Remove(travelAgent);
             await _context.SaveChangesAsync();
         }
+        public async Task<AgentRegisterDTO> Register(AgentRegisterDTO travelAgent)
+        {
+            if (travelAgent == null)
+            {
+                throw new ArgumentNullException(nameof(travelAgent));
+            }
 
+            _context.TravelAgents.Add(new TravelAgent
+            {
+                AgentName = travelAgent.AgentName,
+                AgentEmail = travelAgent.AgentEmail,
+                AgentPassword = travelAgent.AgentPassword != null ? Encrypt(travelAgent.AgentPassword) : travelAgent.AgentPassword,
+                AgentRegistrationDate = DateTime.Now.ToString(),
+                AgentStatus = false
+            });
+            await _context.SaveChangesAsync();
+            return travelAgent;
+        }
         public async Task<StatusChangeDTO> UpdateAgentStatus(int id,StatusChangeDTO travelAgent)
         {
             var agent = await _context.TravelAgents.FirstOrDefaultAsync(x => x.AgentId == id);

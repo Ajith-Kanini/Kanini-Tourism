@@ -16,6 +16,8 @@ namespace HotelManagementAPI.Models
         [MaxLength(200, ErrorMessage = "Address cannot exceed 200 characters.")]
         public string? HotelAddress { get; set; }
 
+        public string? HotelDescription { get; set; }
+
         [Required(ErrorMessage = "City is required.")]
         [MaxLength(100, ErrorMessage = "City cannot exceed 100 characters.")]
         public string? HotelCity { get; set; }

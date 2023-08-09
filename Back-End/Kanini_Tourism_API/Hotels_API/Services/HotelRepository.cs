@@ -34,23 +34,34 @@ namespace HotelManagementAPI.Repositories
         public async Task<Hotel> AddHotelAsync([FromForm] Hotel hotel, IFormFile imageFile)
         {
 
-            if (hotel == null)
+            try
             {
-                throw new ArgumentNullException(nameof(hotel));
+                if (imageFile == null || imageFile.Length == 0)
+                {
+                    throw new ArgumentException("Invalid file");
+                }
+
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads/hotels");
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                hotel.HotelImage = fileName;
+                _context.Hotels.Add(hotel);
+
+                await _context.SaveChangesAsync();
+
+                return hotel;
             }
-            if (imageFile == null || imageFile.Length == 0)
+            catch (Exception ex)
             {
-                throw new ArgumentException("Invalid file");
+                // Handle exception (log, etc.)
+                throw new Exception("An error occurred while creating the hotel.", ex);
             }
-
-            var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "uploads/hotels");
-            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
-            var filePath = Path.Combine(uploadsFolder, fileName);
-            hotel.HotelImage = fileName;
-            _context.Hotels.Add(hotel);
-            await _context.SaveChangesAsync();
-
-            return hotel;
         }
 
         public async Task<Hotel> UpdateHotelAsync(int id, [FromForm] Hotel hotel, IFormFile imageFile)
@@ -100,6 +111,7 @@ namespace HotelManagementAPI.Repositories
             existingHotel.HotelCity=hotel.HotelCity;
             existingHotel.HotelCountry=hotel.HotelCountry;
             existingHotel.StarRating=hotel.StarRating;
+            existingHotel.HotelDescription=hotel.HotelDescription;
             await _context.SaveChangesAsync();
 
             return existingHotel;

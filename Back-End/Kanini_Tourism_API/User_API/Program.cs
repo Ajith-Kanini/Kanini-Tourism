@@ -46,6 +46,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddDbContext<UserContext>(op => op.UseSqlServer(builder.Configuration.GetConnectionString("OneToManyConnection")));
 
 builder.Services.AddScoped<IUserRepository,UserRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 // Adding Authentication
 builder.Services.AddAuthentication(options =>
 {

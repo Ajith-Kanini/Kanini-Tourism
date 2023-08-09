@@ -1,8 +1,30 @@
 export const Variable ={
     AgentURL:{
-        GetAll:'https://localhost:7075/api/TravelAgents'
+        GetAll:'https://localhost:7075/api/TravelAgents',
+        Login:'https://localhost:7075/api/AgentAuthentication/Agent'
     },
     AdminURL:{
-        Gallery:'https://localhost:7075/api/ImageGalleries'
+        Gallery:'https://localhost:7075/api/ImageGalleries',
+        Login:'https://localhost:7075/api/AgentAuthentication/Admin'
+    },
+    HotelURL:{
+        GetAll:'https://localhost:7006/api/Hotels'
+    },
+    PackagesURL:{
+        GetAll:'https://localhost:7075/api/Packages'
+    },
+    UserURL:{
+        GetAll:'https://localhost:7162/api/Users',
+        Login:'https://localhost:7162/api/UserAuthentication/User',
+        Booking:'https://localhost:7162/api/Bookings'
+    },
+    OfferURL:{
+        GetAll:'https://localhost:7075/api/TourOffers'
+    },
+    BookingURL:{
+        GetAll:'https://localhost:7162/api/Bookings'
+    },
+    FeedBackURL:{
+        GetAll:'https://localhost:7162/api/Feedbacks'
     }
 } 

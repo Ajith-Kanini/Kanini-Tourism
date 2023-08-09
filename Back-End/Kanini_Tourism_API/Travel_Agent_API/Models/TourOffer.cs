@@ -13,13 +13,13 @@ namespace TravelAgencyManagementAPI.Models
         public string? Description { get; set; }
 
       
-        //[DataType(DataType.Date)]
+        [DataType(DataType.Date)]
         public string? StartDate { get; set; }
 
-        //[DataType(DataType.Date)]
+        [DataType(DataType.Date)]
         public string? EndDate { get; set; }
 
-        //[DataType(DataType.Currency)]
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
 

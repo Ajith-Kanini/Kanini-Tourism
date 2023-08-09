@@ -46,7 +46,8 @@ namespace TravelAgencyManagementAPI.Repositories
             }
             packages.PackageImage = fileName;
             await _context.AddAsync(packages);
-            await _context.SaveChangesAsync(); // Use asynchronous SaveChangesAsync()
+
+            await _context.SaveChangesAsync(); 
 
             return packages;
         }

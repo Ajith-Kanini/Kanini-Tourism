@@ -18,7 +18,7 @@ namespace UserManagementAPI.Repositories
 
         public async Task<IEnumerable<Bookings>> GetBookingsAsync()
         {
-            return await _context.Bookings.ToListAsync();
+            return await _context.Bookings.Include(x=>x.User).ToListAsync();
         }
 
         public async Task<Bookings> GetBookingByIdAsync(int id)
@@ -32,6 +32,8 @@ namespace UserManagementAPI.Repositories
             {
                 throw new ArgumentNullException(nameof(booking));
             }
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.UserId == booking.User.UserId);
+            booking.User=user;
 
             _context.Bookings.Add(booking);
             await _context.SaveChangesAsync();

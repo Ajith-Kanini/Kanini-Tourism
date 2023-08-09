@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Payment = ({ onSuccess }) => {
+const Payment = ({ onSuccess,amountpsd }) => {
   const [amount, setAmount] = React.useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (amount === '') {
-      alert('Please enter the amount');
+      alert('Please enter the Phone number');
     } else {
       var options = {
         key: 'rzp_test_ptZiEyaQBXWK5X',
         key_secret: '5L4mup2uHzEmhrBoDEQEYY31',
-        amount: amount * 100,
+        amount: amountpsd * 100,
         currency: 'INR',
         name: 'TRAVELTRAVO',
         description: 'Payment Testing',
@@ -44,7 +44,7 @@ const Payment = ({ onSuccess }) => {
         <br />
         <input
           type="text"
-          placeholder="Enter Amount"
+          placeholder="Enter Phone number"
           className="formInput"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}

@@ -9,12 +9,28 @@
       "PackagePath": "staticwebassets\\uploads\\agent\\019aeb05-7884-439a-bfe9-d098b37c530c.jpg"
     },
     {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\0439eafc-1fef-4ff7-9dc0-33967e7eb87c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\0439eafc-1fef-4ff7-9dc0-33967e7eb87c.jpg"
+    },
+    {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\05240ac5-5a8b-43f9-97d1-1ebd2910f4d6.jpg",
       "PackagePath": "staticwebassets\\uploads\\agent\\05240ac5-5a8b-43f9-97d1-1ebd2910f4d6.jpg"
     },
     {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\07a483c7-3f5e-48ce-91ef-4751a82ca58c.jpg",
       "PackagePath": "staticwebassets\\uploads\\agent\\07a483c7-3f5e-48ce-91ef-4751a82ca58c.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\1253b717-a2f1-40ff-a514-d2942d7de8de.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\1253b717-a2f1-40ff-a514-d2942d7de8de.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\147ee0e5-1fb2-4c8b-ae05-66e4f0e78203.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\147ee0e5-1fb2-4c8b-ae05-66e4f0e78203.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\1e9425ce-2cd4-4ec1-8865-db0cc7c80beb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\1e9425ce-2cd4-4ec1-8865-db0cc7c80beb.jpg"
     },
     {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\20dd4b5a-f519-45b3-8471-355fb73cde7f.avif",
@@ -29,6 +45,10 @@
       "PackagePath": "staticwebassets\\uploads\\agent\\2b8ee0b7-6408-4370-8845-a7ce5603b213.jpg"
     },
     {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\3c1b97fc-fdc5-4374-a86c-e09f8824edb7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\3c1b97fc-fdc5-4374-a86c-e09f8824edb7.jpg"
+    },
+    {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\44924e30-5160-4d0a-b3ea-fbf002391c29.jpg",
       "PackagePath": "staticwebassets\\uploads\\agent\\44924e30-5160-4d0a-b3ea-fbf002391c29.jpg"
     },
@@ -39,6 +59,10 @@
     {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\8b0ddf6c-e0df-40e9-8b04-35166322fbc7.avif",
       "PackagePath": "staticwebassets\\uploads\\agent\\8b0ddf6c-e0df-40e9-8b04-35166322fbc7.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\ad6f4eaa-2be3-4f77-b560-1ac4c2ff4d5d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agent\\ad6f4eaa-2be3-4f77-b560-1ac4c2ff4d5d.jpg"
     },
     {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\agent\\c841db09-0e26-46ef-adb8-b2f46c75709b.jpg",
@@ -61,8 +85,100 @@
       "PackagePath": "staticwebassets\\uploads\\agent\\f2c8ea4a-d83c-4a9c-a772-55bbf1984c6b.jpg"
     },
     {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\0c1badd9-6c02-408c-8b3e-59aec7e83530.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\0c1badd9-6c02-408c-8b3e-59aec7e83530.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\1e4fed95-8806-44c1-8c6d-900a6c762e82.avif",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\1e4fed95-8806-44c1-8c6d-900a6c762e82.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\1e559003-b0a9-4279-aed5-c3ea7b0b3ee7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\1e559003-b0a9-4279-aed5-c3ea7b0b3ee7.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\22ae6953-b7e8-4c45-9d34-f1a08dbfdbeb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\22ae6953-b7e8-4c45-9d34-f1a08dbfdbeb.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\37a69bd4-95fa-47c6-b476-6de6ea462531.avif",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\37a69bd4-95fa-47c6-b476-6de6ea462531.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\5c6625ff-fe58-430a-90d8-d645c991df28.avif",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\5c6625ff-fe58-430a-90d8-d645c991df28.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\654afd4d-fcc9-4c3d-b288-03f07f4efc9a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\654afd4d-fcc9-4c3d-b288-03f07f4efc9a.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\67dea261-9015-4530-bdaf-a1e8ebfd5c4f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\67dea261-9015-4530-bdaf-a1e8ebfd5c4f.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\7b7ea6ec-ecc0-4b63-80cd-c2b9126351a1.avif",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\7b7ea6ec-ecc0-4b63-80cd-c2b9126351a1.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\94a1a2ea-f9d4-4586-92b1-b29d93cba7a4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\94a1a2ea-f9d4-4586-92b1-b29d93cba7a4.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\ac4bd63a-3280-4056-ae21-322c7b5b3bb3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\ac4bd63a-3280-4056-ae21-322c7b5b3bb3.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\b2e55196-405a-4da4-93b4-1704b1955870.avif",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\b2e55196-405a-4da4-93b4-1704b1955870.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\e2ed0004-64fa-490a-9c31-5a337fb51b0b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\e2ed0004-64fa-490a-9c31-5a337fb51b0b.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\e596c6df-b23c-4131-9a1f-41e1a86b2920.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\e596c6df-b23c-4131-9a1f-41e1a86b2920.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\ed74c6d4-6438-46c0-a845-2d54939372f7.avif",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\ed74c6d4-6438-46c0-a845-2d54939372f7.avif"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\fd4071ef-0aea-41de-8173-b2af2918a7ae.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\fd4071ef-0aea-41de-8173-b2af2918a7ae.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\gallery\\fefb3e09-47c7-4081-abfe-53f7b835fe50.jpg",
+      "PackagePath": "staticwebassets\\uploads\\gallery\\fefb3e09-47c7-4081-abfe-53f7b835fe50.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\127179c3-7f4f-4a6d-a92d-5f81a881a974.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\127179c3-7f4f-4a6d-a92d-5f81a881a974.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\342543ba-2f4a-41dd-bcb4-0fc423eae18c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\342543ba-2f4a-41dd-bcb4-0fc423eae18c.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\5661ccfe-6ae4-4e62-ab5e-da09f7b08613.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\5661ccfe-6ae4-4e62-ab5e-da09f7b08613.jpg"
+    },
+    {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\6a6739ce-377e-4fbb-8506-f860a3d59b52.jpg",
       "PackagePath": "staticwebassets\\uploads\\packages\\6a6739ce-377e-4fbb-8506-f860a3d59b52.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\89012187-2c06-4501-93f5-6745e05fcd67.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\89012187-2c06-4501-93f5-6745e05fcd67.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\93e42a39-c39e-4ee9-b7f5-17235f7229e6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\93e42a39-c39e-4ee9-b7f5-17235f7229e6.jpg"
+    },
+    {
+      "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\b53f7ac1-c932-49f6-8c3c-ead32215477e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\packages\\b53f7ac1-c932-49f6-8c3c-ead32215477e.jpg"
     },
     {
       "Id": "E:\\Internship\\BigBang III\\Kanini-Tourism\\Back-End\\Kanini_Tourism_API\\Travel_Agent_API\\wwwroot\\uploads\\packages\\edd0c819-aef3-41c2-b522-258b2c7e04d2.jpg",

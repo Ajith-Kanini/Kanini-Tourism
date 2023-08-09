@@ -9,6 +9,7 @@ namespace UserManagementAPI.DB
 
         public DbSet<Bookings> Bookings { get; set; }
         public DbSet<Payment> Payments { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
 
         public UserContext(DbContextOptions<UserContext> options) : base(options)
         {

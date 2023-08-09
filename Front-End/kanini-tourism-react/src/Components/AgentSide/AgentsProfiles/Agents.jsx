@@ -9,7 +9,7 @@ const Agents = () => {
     axios
       .get(Variable.AgentURL.GetAll)
       .then((response) => {
-        setAgents(response.data);
+        setAgents(response.data.filter(x=>x.agentStatus===true));
       })
       .catch((error) => {
         console.error("Error fetching agent details:", error);
@@ -19,7 +19,7 @@ const Agents = () => {
   return (
     <div style={{display:'flex'}}>
       {agents.map((agent) => (
-        <div className={`card ${Agstyle.card} ${Agstyle.card2}`}>
+        <div className={`card ${Agstyle.card} ${Agstyle.card2} shadow`}>
           <div className={Agstyle.card_image}>
             <img
               src={`https://localhost:7075/uploads/agent/${agent.agentImage}`}

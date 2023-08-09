@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UserManagementAPI.Repositories;
 using UserManagementAPI.Models;
+using UserManagementAPI.Models.DTO;
 
 namespace UserManagementAPI.Controllers
 {
@@ -81,6 +82,12 @@ namespace UserManagementAPI.Controllers
 
             await _userRepository.DeleteUserAsync(user);
             return NoContent();
+        }
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register(UserDTO user)
+        {
+            var addedUser = await _userRepository.Register(user);
+            return CreatedAtAction("GetUser", new { id = addedUser.FullName }, addedUser);
         }
     }
 }

@@ -61,6 +61,28 @@ namespace UserManagementAPI.Migrations
                     b.ToTable("Bookings");
                 });
 
+            modelBuilder.Entity("UserManagementAPI.Models.Feedback", b =>
+                {
+                    b.Property<int>("FeedbackId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeedbackId"));
+
+                    b.Property<string>("FeedbackDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("FeedbackId");
+
+                    b.ToTable("Feedbacks");
+                });
+
             modelBuilder.Entity("UserManagementAPI.Models.Payment", b =>
                 {
                     b.Property<int>("PaymentId")
@@ -132,13 +154,13 @@ namespace UserManagementAPI.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<DateTime>("RegistrationDate")
+                    b.Property<DateTime?>("RegistrationDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserImage")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("UserStatus")
+                    b.Property<bool?>("UserStatus")
                         .HasColumnType("bit");
 
                     b.HasKey("UserId");

@@ -14,5 +14,6 @@ namespace TravelAgencyManagementAPI.Repositories
         Task<TravelAgent> UpdateTravelAgentAsync(int id, [FromForm] TravelAgent travelAgent, IFormFile imageFile);
         Task DeleteTravelAgentAsync(TravelAgent travelAgent);
         Task<StatusChangeDTO> UpdateAgentStatus(int id,StatusChangeDTO travelAgent);
+        Task<AgentRegisterDTO> Register(AgentRegisterDTO user);
     }
 }

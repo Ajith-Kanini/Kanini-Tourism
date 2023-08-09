@@ -5,38 +5,13 @@ import { Variable } from "../../../Variables";
 
 const Gallery = () => {
   const [Gallery, setGallery] = useState([]);
-
-  const [file, setFile] = useState(null);
-
-
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    const formData = new FormData();
-    formData.append("imageName", 'Image Name');
-    formData.append("imageUrl", file);
-
-    try {
-      console.log(formData);
-      const response = await axios.post(Variable.AdminURL.Gallery, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
-
-      console.log("Image upload response:", response.data);
-      // Clear form fields
-      setFile(null);
-      // setTitle("");
-      // setDescription("");
-    } catch (error) {
-      console.error("Error uploading image:", error);
-    }
+  const [selectedImage, setSelectedImage] = useState(null);
+ const [place,setplace]=useState();
+  const handleImageChange = (event) => {
+    setSelectedImage(event.target.files[0]);
   };
-  const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
-  }
+
+  
   useEffect(() => {
     axios
       .get(Variable.AdminURL.Gallery)
@@ -46,13 +21,44 @@ const Gallery = () => {
       .catch((error) => {
         console.error("Error fetching agent details:", error);
       });
-  }, []);
+  
+  
+  });
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData();
+    formData.append('imageFile', selectedImage);
+    formData.append('imageName', place);
+
+    try {
+      console.log(formData);
+      const response = await fetch(Variable.AdminURL.Gallery, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+       
+        console.log('Image uploaded successfully');
+      } else {
+
+        console.error('Image upload failed');
+      }
+    } catch (error) {
+      // Handle network errors
+      console.error('Error occurred while uploading image:', error);
+    }
+  };
   return (
     <div>
-      <div className="form-group d-flex container" >
-        <input type="file" id="file" onChange={handleFileChange} className="form-control"/>
-        <button  onClick={handleSubmit} className="btn btn-success"> Save</button>
-        </div>
+      {localStorage.getItem('Role')==='Admin' && <div>
+      <form onSubmit={handleFormSubmit} className="d-flex">
+        <input type="text" placeholder="Place Name" name={place} onChange={(e)=>setplace(e.target.value)} className="form-control"/>
+        <input type="file" onChange={handleImageChange} className=" form-control" />
+        <button type="submit" className="btn btn-success">Upload Image</button>
+      </form>
+    </div>}
       <div id="gallery" className="container-fluid mt-5">
         
         {

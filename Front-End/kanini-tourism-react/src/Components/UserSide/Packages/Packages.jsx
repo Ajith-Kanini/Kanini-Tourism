@@ -38,8 +38,10 @@ const News = () => {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, 
   };
 
   if (cards.length === 0) {
@@ -48,7 +50,8 @@ const News = () => {
   
 
   return (
-    <div className={PkgStyles.news}>
+    <section>
+      <div className={PkgStyles.news}>
       <Slider {...settings}>
         {Gallery.map((item, index) => (
           <div key={index}>
@@ -57,6 +60,7 @@ const News = () => {
         ))}
       </Slider>
     </div>
+    </section>
   );
 };
 

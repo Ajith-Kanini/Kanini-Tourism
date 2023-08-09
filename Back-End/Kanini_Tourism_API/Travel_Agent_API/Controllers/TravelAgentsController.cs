@@ -7,16 +7,14 @@ using Microsoft.EntityFrameworkCore;
 using TravelAgencyManagementAPI.DB;
 using TravelAgencyManagementAPI.Models;
 using TravelAgencyManagementAPI.Models.DTO;
-using TravelAgencyManagementAPI.Repositories; // Import your repository namespace
-
+using TravelAgencyManagementAPI.Repositories; 
 namespace TravelAgencyManagementAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class TravelAgentsController : ControllerBase
     {
-        private readonly ITravelAgentRepository _travelAgentRepository; // Use your repository interface
-
+        private readonly ITravelAgentRepository _travelAgentRepository; 
         public TravelAgentsController(ITravelAgentRepository travelAgentRepository)
         {
             _travelAgentRepository = travelAgentRepository;
@@ -119,6 +117,12 @@ namespace TravelAgencyManagementAPI.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
+        [HttpPost("Register")]
+        public async Task<AgentRegisterDTO> Register(AgentRegisterDTO user)
+        {
+            var addedUser = await _travelAgentRepository.Register(user);
+            return addedUser;
+        }
 
         [HttpPut("Updatestatus/{id}")]
         public async Task<IActionResult> UpdateAgentStatus(int id, StatusChangeDTO travelAgent)
@@ -142,6 +146,8 @@ namespace TravelAgencyManagementAPI.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
+
         }
+        
     }
 }

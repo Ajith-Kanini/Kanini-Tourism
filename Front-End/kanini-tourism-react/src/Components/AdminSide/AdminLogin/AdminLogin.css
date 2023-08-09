@@ -14,7 +14,7 @@ body {
   :-moz-placeholder { /* Firefox 18- */
     color: #748194;
   }
-  .container{
+  .container_cont{
      display:none;
      position:absolute;
     width: auto;
@@ -23,22 +23,30 @@ body {
     left: calc(40% - 160px);
      border-radius:15px 15px 15px 15px;
   }
+  .AdminLogin{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
   .c1{
-     box-shadow:0 0 10px grey;
+     box-shadow:0 0 10px black;
      background-color:white;
      width:300px;
-     height:500px;
+     height:fit-content;
+     margin-left:auto;
+     margin-right: auto;
+     margin-top: 5rem;
      display:inline-block;
      border-radius:15px 15px 15px 15px;
   }
   
   .c11{
      background-image:url('https://i.pinimg.com/736x/b8/09/22/b80922f6ea2daaf36a6627378662803b--deck-of-cards-phone-wallpapers.jpg');
-     background-size:300px 400px;
+     /* background-size:300px 400px; */
      background-repeat: no-repeat;
      background-color:white;
-     width:300px;
-     height:400px;
+     width:fit-content;
+     height:fit-content;
      display:inline-block;
      position:absolute;
      z-index:4;
@@ -123,19 +131,7 @@ body {
      color: #748194;
      font-size: 14px;
   }
-  .btn{
-     font-weight: bold;
-     width: 230px;
-     margin: 0 35px 20px ;
-     height: 45px;
-     padding: 6px 15px;
-     border-radius: 5px;
-     outline: none;
-     border: none;
-     background: #EE9BA3;
-     color: white;
-     font-size: 14px;
-  }
+ 
   .signup1{
      color:#748194;
      font-size:30px;

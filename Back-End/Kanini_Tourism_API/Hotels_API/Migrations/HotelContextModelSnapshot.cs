@@ -57,7 +57,7 @@ namespace HotelManagementAPI.Migrations
 
                     b.HasIndex("RoomId");
 
-                    b.ToTable("Bookings", (string)null);
+                    b.ToTable("Bookings");
                 });
 
             modelBuilder.Entity("HotelManagementAPI.Models.Hotel", b =>
@@ -81,6 +81,9 @@ namespace HotelManagementAPI.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("HotelDescription")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("HotelImage")
                         .HasColumnType("nvarchar(max)");
 
@@ -94,7 +97,7 @@ namespace HotelManagementAPI.Migrations
 
                     b.HasKey("HotelId");
 
-                    b.ToTable("Hotels", (string)null);
+                    b.ToTable("Hotels");
                 });
 
             modelBuilder.Entity("HotelManagementAPI.Models.Room", b =>
@@ -120,7 +123,7 @@ namespace HotelManagementAPI.Migrations
 
                     b.HasIndex("HotelId");
 
-                    b.ToTable("Rooms", (string)null);
+                    b.ToTable("Rooms");
                 });
 
             modelBuilder.Entity("HotelManagementAPI.Models.Booking", b =>

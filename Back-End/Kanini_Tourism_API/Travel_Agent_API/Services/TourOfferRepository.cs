@@ -32,7 +32,8 @@ namespace TravelAgencyManagementAPI.Repositories
             {
                 throw new ArgumentNullException(nameof(tourOffer));
             }
-
+            var agent = await _context.TravelAgents.FirstOrDefaultAsync(x => x.AgentId == tourOffer.Agent.AgentId);
+            tourOffer.Agent = agent;
             _context.TourOffers.Add(tourOffer);
             await _context.SaveChangesAsync();
 

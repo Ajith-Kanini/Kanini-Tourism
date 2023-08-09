@@ -11,6 +11,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Security.Cryptography;
 using System.Text;
+using UserManagementAPI.Models.DTO;
+
 namespace UserManagementAPI.Repositories
 {
     public class UserRepository : IUserRepository
@@ -120,6 +122,24 @@ namespace UserManagementAPI.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task<UserDTO> Register(UserDTO user)
+        {
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+
+            _context.Users.Add(new User
+            {
+                FullName=user.FullName,
+                Email=user.Email,
+                Password= user.Password != null ? Encrypt(user.Password) : user.Password,
+                RegistrationDate=DateTime.Now,
+                UserStatus=true
+            });
+            await _context.SaveChangesAsync();
+            return user;
+        }
         private string Encrypt(string password)
         {
             // Example key and IV generation using hashing

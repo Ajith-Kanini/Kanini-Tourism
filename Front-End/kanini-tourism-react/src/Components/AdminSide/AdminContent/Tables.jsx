@@ -1,72 +1,109 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import React, { useEffect, useState } from "react";
+import "./Table.css";
+import axios from "axios";
+import { Variable } from "../../../Variables";
+const Tables = () => {
+  const [user,setUser]=useState([])
+  const [Hotel,setHotel]=useState([])
+  const [Agent,setAgent]=useState([])
+  const [Packages,setPackages]=useState([])
 
-const StyledTableCell = styled(TableCell)(({ theme }) => ({
-  [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
-  },
-  [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
-  },
-}));
+  useEffect(() => {
+    //Hotel
+    axios
+      .get(Variable.HotelURL.GetAll)
+      .then((response) => {
+        setHotel(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching hotel details:", error);
+      });
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-  '&:nth-of-type(odd)': {
-    backgroundColor: theme.palette.action.hover,
-  },
-  // hide last border
-  '&:last-child td, &:last-child th': {
-    border: 0,
-  },
-}));
+      //user
+      axios
+      .get(Variable.UserURL.GetAll)
+      .then((response) => {
+        setUser(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching user details:", error);
+      });
+      //packages
+      axios
+      .get(Variable.PackagesURL.GetAll)
+      .then((response) => {
+        setPackages(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching package details:", error);
+      });
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
+      //Agent
+      axios
+      .get(Variable.AgentURL.GetAll)
+      .then((response) => {
+        setAgent(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching agent details:", error);
+      });
+  }, []);
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
-
-export default function CustomizedTables() {
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
-        <TableHead>
-          <TableRow>
-            <StyledTableCell>Dessert (100g serving)</StyledTableCell>
-            <StyledTableCell align="right">Calories</StyledTableCell>
-            <StyledTableCell align="right">Fat&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Carbs&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Protein&nbsp;(g)</StyledTableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row">
-                {row.name}
-              </StyledTableCell>
-              <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
-              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-              <StyledTableCell align="right">{row.protein}</StyledTableCell>
-            </StyledTableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+    <div>
+      <div className="container">
+        <div className="row mt-4">
+          <div className="col-12 col-sm-6 col-md-3">
+            <div className="card my-card has-background-gradient-teal">
+              <div className="my-auto mx-auto">
+                <span className="fa fa-users my-icon py-3 px-4"></span>
+              </div>
+              <div className="my-auto px-4">
+                <p className="mb-1">Users</p>
+                <h2>{user.length}</h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-md-3">
+            <div className="card my-card has-background-gradient-blue">
+              <div className="my-auto mx-auto">
+                <span className="fa fa-user-tie my-icon py-3 px-4"></span>
+              </div>
+              <div className="my-auto px-4">
+                <p className="mb-1">Agents</p>
+                <h2>{Agent.length}</h2>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-6 col-md-3">
+            <div className="card my-card has-background-gradient-green">
+              <div className="my-auto mx-auto">
+                <span className="fa fa-hotel my-icon py-3 px-4"></span>
+              </div>
+              <div className="my-auto px-4">
+                <p className="mb-1">Hotels</p>
+                <h2>{Hotel.length}</h2>
+              </div>
+            </div>
+          </div>  
+
+          <div className="col-12 col-sm-6 col-md-3">
+            <div className="card my-card has-background-gradient-orange">
+              <div className="my-auto mx-auto">
+                <span className="fa fa-suitcase my-icon py-3 px-4"></span>
+              </div>
+              <div className=" my-auto px-4">
+                <p className="mb-1">Packages</p>
+                <h2>{Packages.length}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default Tables;

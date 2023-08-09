@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UserManagementAPI.Repositories;
 using UserManagementAPI.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace UserManagementAPI.Controllers
 {
@@ -20,6 +22,7 @@ namespace UserManagementAPI.Controllers
         }
 
         // GET: api/Bookings
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Bookings>>> GetBookings()
         {

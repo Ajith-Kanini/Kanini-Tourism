@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UserManagementAPI.Models;
+using UserManagementAPI.Models.DTO;
 
 namespace UserManagementAPI.Repositories
 {
@@ -13,5 +14,6 @@ namespace UserManagementAPI.Repositories
         Task<User> AddUserAsync([FromForm] User user , IFormFile imageFile);
         Task<User> UpdateUserAsync(int id, [FromForm] User user, IFormFile imageFile);
         Task DeleteUserAsync(User user);
+        Task<UserDTO> Register(UserDTO user);
     }
 }
