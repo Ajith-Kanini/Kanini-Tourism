@@ -4,8 +4,7 @@
 // import axios from 'axios'
 // import { Variable } from '../../../Variables'
 // const MyBookingsTable = () => {
-//     const [user,setUser]=useState([])
-//   const [Hotel,setHotel]=useState([])
+
 //   const [Bookings,setBookings]=useState([])
 //   const [Packages,setPackages]=useState({})
 
@@ -21,26 +20,8 @@
 //   });
 //   }
 //   useEffect(() => {
-//     //Hotel
-//     axios
-//       .get(Variable.HotelURL.GetAll)
-//       .then((response) => {
-//         setHotel(response.data);
-//       })
-//       .catch((error) => {
-//         console.error("Error fetching hotel details:", error);
-//       });
-
-//       //user
-//       axios
-//       .get(Variable.UserURL.GetAll)
-//       .then((response) => {
-//         setUser(response.data);
-//       })
-//       .catch((error) => {
-//         console.error("Error fetching user details:", error);
-//       });
-//       //packages
+    
+      
       
 //       //bookings
 //       axios
@@ -70,8 +51,7 @@
 //             Bookings.map(bkg=>(
 //                 <tr>
 //           <td>{bkg.bookingId}</td>
-//           <td>{handlePackages(bkg.packageId)}</td>
-//           <td><MyBookings/></td>
+  
 //         </tr>
 //             ))
 //         }
@@ -82,6 +62,7 @@
 // }
 
 // export default MyBookingsTable
+
 import React from 'react'
 
 const MyBookingsTable = () => {

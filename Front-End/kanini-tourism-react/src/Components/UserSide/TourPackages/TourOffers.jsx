@@ -21,7 +21,9 @@ const TourOffers = () => {
     <div>
       <div style={{display:'flex'}}>
       <h3>Popular Offers</h3>
-      <h3 style={{marginLeft:'auto'}}><AddPackage/></h3>
+     
+     { localStorage.getItem('Role')==='Agent' && 
+      <h3 style={{marginLeft:'auto'}}><AddPackage/></h3>}
       </div>
     <div className="row">
      

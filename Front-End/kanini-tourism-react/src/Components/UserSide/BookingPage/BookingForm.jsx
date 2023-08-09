@@ -8,7 +8,8 @@ import Payment from "./PaymentPage/Payment";
 import classNames from "classnames";
 import axios from "axios";
 import { Variable } from "../../../Variables";
-
+import { jsPDF } from 'jspdf';
+import 'jspdf-autotable';
 const BookingForm = ({ onClose }) => {
   const [Hotel, setHotel] = useState([]);
   const [Packages, setPackages] = useState([]);
@@ -25,6 +26,47 @@ const BookingForm = ({ onClose }) => {
     offers:'',
     paymentAmount: 0,
   });
+  
+
+  const generatePaymentPDF = () => {
+
+    const doc = new jsPDF();
+    const currentDate = new Date();
+    
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    
+    const logo = new Image();
+    logo.src = 'https://cdn-icons-png.flaticon.com/128/826/826070.png'; 
+  
+    logo.onload = () => {
+      const logoWidth = 15; 
+      const logoHeight = (logoWidth * logo.height) / logo.width; 
+  
+      doc.addImage(logo, 'PNG', 15, 8, logoWidth, logoHeight); 
+      doc.text('Travel Travo', 55, 20); 
+      doc.text('Tour Booking Invoice', 15, 40);
+      const tableData = [
+        ['Name', formData.name],
+        ['Email ID', formData.email],
+        ['Number of People', formData.numberOfPeople],
+        ['Package Name',  'Kerala'],
+        ['Hotel Name', 'Grand Hyatt Kochi Bolgatty , Kochi'],
+        ['Booking Date', months[currentDate.getMonth()] + ' ' + currentDate.getDate() + ', ' + currentDate.getFullYear() + ' (' + days[currentDate.getDay()] + ')'],
+        ['Total', 'INR ' + formData.paymentAmount],
+      ];
+  
+      doc.autoTable({
+        startY: 60, // Adjust the vertical position
+        head: [['Description', 'Amount']],
+        body: tableData,
+      });
+  
+      doc.save('payment_receipt.pdf');
+    };
+  };
+  
+  
   useEffect(() => {
     //Hotel
     axios
@@ -435,7 +477,7 @@ const BookingForm = ({ onClose }) => {
           )}
           <ToastContainer autoClose={3000} pauseOnHover />
                
-          <button onClick={handleProceed} className="  formButton" style={{width:'50%', marginTop:'.3rem',marginLeft:'5rem'}}>Book Now</button>
+          <button onClick={(e)=>{generatePaymentPDF(e);handleProceed(e)}} className="  formButton" style={{width:'50%', marginTop:'.3rem',marginLeft:'5rem'}}>Book Now</button>
         </div>
       ))}
     </div>
@@ -443,3 +485,4 @@ const BookingForm = ({ onClose }) => {
 };
 
 export default BookingForm;
+

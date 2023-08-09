@@ -8,6 +8,7 @@ import Gallery from '../Gallery/Gallery';
 import Table from '../AdminContent/Tables'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import AdminFeedback from '../AdminFeedback/AdminFeedback';
 const Dashboard = () => {
  
   const [sidebarstate,setsidebarstate]=useState('Dashboard')
@@ -36,6 +37,7 @@ const Dashboard = () => {
             {sidebarstate==='Action' && <AdminAction/>}
             {sidebarstate==='Gallery' && <Gallery/>}
             {sidebarstate==='Dashboard' && <Table/>}
+            {sidebarstate==='Feedback' && <AdminFeedback/>}
             
            </div>
             

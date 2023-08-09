@@ -131,6 +131,18 @@ const Sidebar = ({ hdlchange }) => {
               </div>
             </li>
             <li>
+              <div
+                
+                title="Calendar"
+                onClick={() => hdlchange("Feedback")}
+              >
+                <i class="fas fa-comment-alt"></i>
+                <span className={`${SBStyle.link} ${SBStyle.hide}`}>
+                Feedback
+                </span>
+              </div>
+            </li>
+            <li>
               <div title="Messages" onClick={logout}>
               <i className="fas fa-sign-out-alt"></i>
                 <span className={`${SBStyle.link} ${SBStyle.hide}`}>
