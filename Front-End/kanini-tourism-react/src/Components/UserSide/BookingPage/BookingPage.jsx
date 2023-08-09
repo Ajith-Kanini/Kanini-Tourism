@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import BookingForm from './BookingForm';
+import { useNavigate } from 'react-router-dom';
 
 const style = {
   position: 'absolute',
@@ -17,11 +18,16 @@ const style = {
 
 export default function BasicModal() {
   const [open, setOpen] = React.useState(false);
+  const navigate=useNavigate()
   const handleOpen = () => {
    
+     if(localStorage.getItem('Role')==='User' )
+    {
       setOpen(true)
-     
-
+    }     
+    else{
+      navigate('/usersignin')
+    }
    
   };
   const handleClose = () => setOpen(false);
